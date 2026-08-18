@@ -1,0 +1,60 @@
+{
+  "name": "iceberg_table_test",
+  "schema": {
+    "type": "struct",
+    "schema-id": 0,
+    "fields": [
+      {
+        "id": 1,
+        "name": "vendor_id",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "id": 2,
+        "name": "pickup_datetime",
+        "required": false,
+        "type": "timestamp"
+      },
+      {
+        "id": 3,
+        "name": "dropoff_datetime",
+        "required": false,
+        "type": "timestamp"
+      },
+      {
+        "id": 4,
+        "name": "passenger_count",
+        "required": false,
+        "type": "int"
+      },
+      {
+        "id": 5,
+        "name": "trip_distance",
+        "required": false,
+        "type": "float"
+      },
+      {
+        "id": 6,
+        "name": "payment_type",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "id": 7,
+        "name": "fare_amount",
+        "required": false,
+        "type": "decimal(38, 9)"
+      },
+      {
+        "id": 8,
+        "name": "tip_amount",
+        "required": false,
+        "type": "decimal(38, 9)"
+      }
+    ]
+  },
+  "properties": {
+    "write.format.default": "parquet"
+  }
+}
